@@ -9,8 +9,8 @@
 
 - shell:
   - [sudo apt-get install -y zsh python3-pip, Installs zsh & pip]
-  - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"] 
   - [git submodule update --init --recursive, Installing submodules]
+  - [sh ohmyzsh/tools/install.sh] 
   - [sudo mkdir /usr/share/fonts/meslo, create the meslo sub-directory]
   - [sudo curl -o /usr/share/fonts/meslo/MesloLGS-NF-Regular.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf]
   - [sudo curl -o /usr/share/fonts/meslo/MesloLGS-NF-Bold.ttf  https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf] 
