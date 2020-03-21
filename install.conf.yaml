@@ -5,11 +5,23 @@
     ~/.bashrc: bashrc
     ~/.bash_logout: bash_logout
     ~/.zshrc: zshrc
+    ~/.p10k.zsh:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [cd /usr/share/fonts, move into font directory to download the following fonts]
+  - [curl -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf]
+  - [curl -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf]
+  - [curl -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf]
+  - [curl -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf]
+  - [cd -]
+  - [git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k, Installs p10k]
   - [sudo apt-get install -y python3-pip, Installs pip] 
-  - [pip install --update pip, Updates pip] 
-  - [pip install pygments, installs pygments] 
-
-
+  - [pip3 install --update pip, Updates pip] 
+  - [pip3 install pygments, installs pygments] 
+  - [cd /usr/share/fonts, move into font directory to download the following fonts]
+  - [curl -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf]
+  - [curl -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf]
+  - [curl -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf]
+  - [curl -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf]
+  - [cd -]
