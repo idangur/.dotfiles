@@ -6,4 +6,10 @@
     ~/.bash_logout: bash_logout
     ~/.zshrc: zshrc
 
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [sudo apt-get install python3-pip, Installs pip] 
+  - [pip install --update pip, Updates pip] 
+  - [pip install pygments, installs pygments] 
+
 
