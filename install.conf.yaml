@@ -8,8 +8,11 @@
 - link:
     ~/.profile:
     ~/.bashrc:
+      force: true
     ~/.bash_logout:
-    ~/.zshrc: 
+    ~/.zshrc:
+      force: true
+      path: zshrc 
     ~/.p10k.zsh:
 
 - shell:
