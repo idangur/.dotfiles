@@ -9,13 +9,11 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [cd /usr/share/fonts, move into font directory to download the following fonts]
-  - [sudo mkdir meslo && cd meslo, create and move to meslo sub-directory]
-  - [curl -o MesloLGS-NF-Regular.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf]
-  - [curl -o MesloLGS-NF-Bold.ttf  https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf] 
-  - [curl -o MesloLGS-NF-Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf]
-  - [curl -o MesloLGS-NF-Bold-Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf]
-  - [cd -]
+  - [sudo mkdir /usr/share/fonts/meslo, create the meslo sub-directory]
+  - [sudo curl -o /usr/share/fonts/meslo/MesloLGS-NF-Regular.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf]
+  - [sudo curl -o /usr/share/fonts/meslo/MesloLGS-NF-Bold.ttf  https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf] 
+  - [sudo curl -o /usr/share/fonts/meslo/MesloLGS-NF-Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf]
+  - [sudo curl -o /usr/share/fonts/meslo/MesloLGS-NF-Bold-Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf]
   - [git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k, Installs p10k]
   - [sudo apt-get install -y python3-pip, Installs pip] 
   - [pip3 install --update pip, Updates pip] 
