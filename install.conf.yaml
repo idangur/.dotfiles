@@ -8,6 +8,8 @@
     ~/.p10k.zsh:
 
 - shell:
+  - [sudo apt-get install zsh, Installs zsh]
+  - [chsh -s $(which zsh), Alters the default shell to be zsh] 
   - [git submodule update --init --recursive, Installing submodules]
   - [sudo mkdir /usr/share/fonts/meslo, create the meslo sub-directory]
   - [sudo curl -o /usr/share/fonts/meslo/MesloLGS-NF-Regular.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf]
@@ -16,5 +18,4 @@
   - [sudo curl -o /usr/share/fonts/meslo/MesloLGS-NF-Bold-Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf]
   - [git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k, Installs p10k]
   - [sudo apt-get install -y python3-pip, Installs pip] 
-  - [pip3 install --update pip, Updates pip] 
   - [pip3 install pygments, installs pygments] 
